@@ -5,8 +5,8 @@ Rider的中文快速文档不方便网络查找问题，但又不想更改IDE语
 Rider\plugins\localization-zh\: lib\localization-zh.Jar IDE 菜单、设置界面语言文档；
 
 Dotnet\Extensions\com.Intellij.Zh\i18n\ ... .NET相关提示、快速文档、Code Vision、检查/代码样式
-	文件夹下全部**删除或重命名**
-	如果想针对以上更细粒度单独设置，请尝试个别删除重启，不过很费事。
+> 文件夹下全部**删除或重命名**
+> 如果想针对以上更细粒度单独设置，请尝试个别删除重启，不过很费事。
 
 ---
 
