@@ -1,4 +1,37 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>思所匪夷</title><link>https://actforjason.github.io/</link><description>Jason的个人博客，分享技术和知识。</description><generator>Hugo 0.149.0 &amp; FixIt v0.4.0-alpha.2-20250916043850-a228cce0</generator><language>zh-CN</language><managingEditor>actforzjz@gmail.com (Jason)</managingEditor><webMaster>actforzjz@gmail.com (Jason)</webMaster><lastBuildDate>Wed, 12 Nov 2025 15:09:15 +0800</lastBuildDate><atom:link href="https://actforjason.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Python虚拟环境 pip install TLS SSL WARNING</title><link>https://actforjason.github.io/posts/%E7%96%91%E9%9A%BE%E6%9D%82%E7%97%87/python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83-pip-install-tls-ssl-warning/</link><pubDate>Wed, 12 Nov 2025 15:09:15 +0800</pubDate><author>actforzjz@gmail.com (Jason)</author><guid>https://actforjason.github.io/posts/%E7%96%91%E9%9A%BE%E6%9D%82%E7%97%87/python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83-pip-install-tls-ssl-warning/</guid><category domain="https://actforjason.github.io/categories/%E7%96%91%E9%9A%BE%E6%9D%82%E7%97%87/">疑难杂症</category><description>&lt;p&gt;Python 虚拟环境 WARNING: pip is configured with locations that require TLS/SSL, however the ssl module in Python is not available.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>思所匪夷</title><link>https://actforjason.github.io/</link><description>Jason的个人博客，分享技术和知识。</description><generator>Hugo 0.149.0 &amp; FixIt v0.4.0-alpha.2-20250916043850-a228cce0</generator><language>zh-CN</language><managingEditor>actforzjz@gmail.com (Jason)</managingEditor><webMaster>actforzjz@gmail.com (Jason)</webMaster><lastBuildDate>Tue, 18 Nov 2025 15:03:51 +0800</lastBuildDate><atom:link href="https://actforjason.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Blender在线手册固定跳转英文而不是中文</title><link>https://actforjason.github.io/posts/%E5%88%9B%E4%BD%9C%E8%BD%AF%E4%BB%B6/blender/blender%E5%9C%A8%E7%BA%BF%E6%89%8B%E5%86%8C%E5%9B%BA%E5%AE%9A%E8%B7%B3%E8%BD%AC%E8%8B%B1%E6%96%87%E8%80%8C%E4%B8%8D%E6%98%AF%E4%B8%AD%E6%96%87/</link><pubDate>Tue, 18 Nov 2025 15:03:51 +0800</pubDate><author>actforzjz@gmail.com (Jason)</author><guid>https://actforjason.github.io/posts/%E5%88%9B%E4%BD%9C%E8%BD%AF%E4%BB%B6/blender/blender%E5%9C%A8%E7%BA%BF%E6%89%8B%E5%86%8C%E5%9B%BA%E5%AE%9A%E8%B7%B3%E8%BD%AC%E8%8B%B1%E6%96%87%E8%80%8C%E4%B8%8D%E6%98%AF%E4%B8%AD%E6%96%87/</guid><category domain="https://actforjason.github.io/categories/blender/">Blender</category><description>&lt;p&gt;Blender中文手册某些翻译不准确，英文最符合原意。本文介绍一种跳转在线手册不跟随Blender本身语言的方法。&lt;/p&gt;
+&lt;p&gt;打开Blender安装目录文件：
+&lt;code&gt;...\blender-4.2.15-lts.e8cd310002f4\4.2\scripts\modules\bpy\utils\__init__.py&lt;/code&gt;
+修改文件：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;span class="lnt"&gt;12
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-Python" data-lang="Python"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;manual_language_code&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;default&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;en&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="s2"&gt;&amp;#34;&amp;#34;&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="s2"&gt; :return:
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="s2"&gt; The language code used for user manual URL component based on the current language user-preference,
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="s2"&gt; falling back to the ``default`` when unavailable.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="s2"&gt; :rtype: str
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="s2"&gt; &amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="c1"&gt;# language = _bpy.context.preferences.view.language&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="c1"&gt;# if language == &amp;#39;DEFAULT&amp;#39;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="c1"&gt;# language = _os.getenv(&amp;#34;LANG&amp;#34;, &amp;#34;&amp;#34;).split(&amp;#34;.&amp;#34;)[0]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;language&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;en&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;_manual_language_codes&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;language&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;default&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;重启Blender后即可生效。&lt;/p&gt;</description></item><item><title>Python虚拟环境 pip install TLS SSL WARNING</title><link>https://actforjason.github.io/posts/%E7%96%91%E9%9A%BE%E6%9D%82%E7%97%87/python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83-pip-install-tls-ssl-warning/</link><pubDate>Wed, 12 Nov 2025 15:09:15 +0800</pubDate><author>actforzjz@gmail.com (Jason)</author><guid>https://actforjason.github.io/posts/%E7%96%91%E9%9A%BE%E6%9D%82%E7%97%87/python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83-pip-install-tls-ssl-warning/</guid><category domain="https://actforjason.github.io/categories/%E7%96%91%E9%9A%BE%E6%9D%82%E7%97%87/">疑难杂症</category><description>&lt;p&gt;Python 虚拟环境 WARNING: pip is configured with locations that require TLS/SSL, however the ssl module in Python is not available.&lt;/p&gt;
 &lt;p&gt;如果使用的是Conda创建的venv，需要在&lt;strong&gt;Conda Prompt&lt;/strong&gt;中运行pip install命令。
 否则使用单纯的Python解释器创建虚拟环境，就可以避免错误。&lt;/p&gt;
 &lt;p&gt;虚拟环境中设置http代理：&lt;/p&gt;
