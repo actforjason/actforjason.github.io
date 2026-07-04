@@ -1,4 +1,67 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>思所匪夷</title><link>https://actforjason.github.io/</link><description>Jason的个人博客，分享技术和知识。</description><generator>Hugo 0.149.0 &amp; FixIt v0.4.0-alpha.2-20250916043850-a228cce0</generator><language>zh-CN</language><managingEditor>actforzjz@gmail.com (Jason)</managingEditor><webMaster>actforzjz@gmail.com (Jason)</webMaster><lastBuildDate>Tue, 18 Nov 2025 15:13:31 +0800</lastBuildDate><atom:link href="https://actforjason.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Rider IDE保持中文但快速文档单独英语</title><link>https://actforjason.github.io/posts/%E5%88%9B%E4%BD%9C%E8%BD%AF%E4%BB%B6/jetbrains/rider-ide%E4%BF%9D%E6%8C%81%E4%B8%AD%E6%96%87%E4%BD%86%E5%BF%AB%E9%80%9F%E6%96%87%E6%A1%A3%E5%8D%95%E7%8B%AC%E8%8B%B1%E8%AF%AD/</link><pubDate>Tue, 18 Nov 2025 15:13:31 +0800</pubDate><author>actforzjz@gmail.com (Jason)</author><guid>https://actforjason.github.io/posts/%E5%88%9B%E4%BD%9C%E8%BD%AF%E4%BB%B6/jetbrains/rider-ide%E4%BF%9D%E6%8C%81%E4%B8%AD%E6%96%87%E4%BD%86%E5%BF%AB%E9%80%9F%E6%96%87%E6%A1%A3%E5%8D%95%E7%8B%AC%E8%8B%B1%E8%AF%AD/</guid><category domain="https://actforjason.github.io/categories/jetbrains/">Jetbrains</category><description>&lt;p&gt;Rider的中文快速文档不方便网络查找问题，但又不想更改IDE语言？&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>思所匪夷</title><link>https://actforjason.github.io/</link><description>Jason的个人博客，分享技术和知识。</description><generator>Hugo 0.149.0 &amp; FixIt v0.4.0-alpha.2-20250916043850-a228cce0</generator><language>zh-CN</language><managingEditor>actforzjz@gmail.com (Jason)</managingEditor><webMaster>actforzjz@gmail.com (Jason)</webMaster><lastBuildDate>Sat, 04 Jul 2026 09:00:36 +0800</lastBuildDate><atom:link href="https://actforjason.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Claude Code AHK自动切换中英输入法</title><link>https://actforjason.github.io/posts/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/claude-code-ahk%E8%87%AA%E5%8A%A8%E5%88%87%E6%8D%A2%E4%B8%AD%E8%8B%B1%E8%BE%93%E5%85%A5%E6%B3%95/</link><pubDate>Sat, 04 Jul 2026 09:00:36 +0800</pubDate><author>actforzjz@gmail.com (Jason)</author><guid>https://actforjason.github.io/posts/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/claude-code-ahk%E8%87%AA%E5%8A%A8%E5%88%87%E6%8D%A2%E4%B8%AD%E8%8B%B1%E8%BE%93%E5%85%A5%E6%B3%95/</guid><description>&lt;p&gt;功能：输入/或@，自动切换英文输入法；Enter接受或Esc清空，自动切换中文输入法。&lt;/p&gt;
+&lt;p&gt;前提：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;使用WindowsTerminal，其他请修改&lt;code&gt;ahk_exe *.exe&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;中文和英语(美国)两个语言包和各自键盘&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;span class="lnt"&gt;12
+&lt;/span&gt;&lt;span class="lnt"&gt;13
+&lt;/span&gt;&lt;span class="lnt"&gt;14
+&lt;/span&gt;&lt;span class="lnt"&gt;15
+&lt;/span&gt;&lt;span class="lnt"&gt;16
+&lt;/span&gt;&lt;span class="lnt"&gt;17
+&lt;/span&gt;&lt;span class="lnt"&gt;18
+&lt;/span&gt;&lt;span class="lnt"&gt;19
+&lt;/span&gt;&lt;span class="lnt"&gt;20
+&lt;/span&gt;&lt;span class="lnt"&gt;21
+&lt;/span&gt;&lt;span class="lnt"&gt;22
+&lt;/span&gt;&lt;span class="lnt"&gt;23
+&lt;/span&gt;&lt;span class="lnt"&gt;24
+&lt;/span&gt;&lt;span class="lnt"&gt;25
+&lt;/span&gt;&lt;span class="lnt"&gt;26
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-AutoHotkey" data-lang="AutoHotkey"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="n"&gt;#HotIf&lt;/span&gt; &lt;span class="nf"&gt;WinActive&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;ahk_exe WindowsTerminal.exe&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="c1"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;; 当按下 / 或 @ 时：保留符号并切换英文&lt;/span&gt;&lt;span class="err"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;&lt;/span&gt;&lt;span class="o"&gt;~&lt;/span&gt;&lt;span class="n"&gt;$&lt;/span&gt;&lt;span class="o"&gt;/::&lt;/span&gt;&lt;span class="err"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;&lt;/span&gt;&lt;span class="o"&gt;~&lt;/span&gt;&lt;span class="n"&gt;$NumpadDiv&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="err"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;&lt;/span&gt;&lt;span class="o"&gt;~&lt;/span&gt;&lt;span class="n"&gt;$&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="c1"&gt; ; Shift + 2 就是 @&lt;/span&gt;&lt;span class="err"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="err"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;&lt;/span&gt; &lt;span class="nb"&gt;Sleep&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;50&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="c1"&gt; ; 延迟 50ms 确保按键已输入，然后切换为英文&lt;/span&gt;&lt;span class="err"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;&lt;/span&gt; &lt;span class="n"&gt;SetInputLanguage&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mh"&gt;0x0409&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="c1"&gt; ; en-US&lt;/span&gt;&lt;span class="err"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="c1"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;; 当输入完成按下回车，或者取消按下 Esc 时：切换回中文&lt;/span&gt;&lt;span class="err"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;&lt;/span&gt;&lt;span class="o"&gt;~&lt;/span&gt;&lt;span class="n"&gt;$Enter&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="err"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;&lt;/span&gt;&lt;span class="o"&gt;~&lt;/span&gt;&lt;span class="n"&gt;$Esc&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="err"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="err"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;&lt;/span&gt; &lt;span class="nb"&gt;Sleep&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;50&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="err"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;&lt;/span&gt; &lt;span class="n"&gt;SetInputLanguage&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mh"&gt;0x0804&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="c1"&gt; ; zh-CN&lt;/span&gt;&lt;span class="err"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="err"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;&lt;/span&gt;&lt;span class="n"&gt;#HotIf&lt;/span&gt;&lt;span class="c1"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;; ========== 核心函数：通过系统底层消息切换输入法 ==========&lt;/span&gt;&lt;span class="err"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;&lt;/span&gt;&lt;span class="n"&gt;SetInputLanguage&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;langID&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="err"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;&lt;/span&gt; &lt;span class="n"&gt;targetHWND&lt;/span&gt; &lt;span class="o"&gt;:=&lt;/span&gt; &lt;span class="nf"&gt;WinExist&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;A&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="err"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;&lt;/span&gt; &lt;span class="n"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;targetHWND&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="c1"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt; ; WM_INPUTLANGCHANGEREQUEST = 0x0050&lt;/span&gt;&lt;span class="err"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;&lt;/span&gt; &lt;span class="nb"&gt;PostMessage&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mh"&gt;0x0050&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;langID&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;targetHWND&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="err"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="err"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item><item><title>Rider IDE保持中文但快速文档单独英语</title><link>https://actforjason.github.io/posts/%E5%88%9B%E4%BD%9C%E8%BD%AF%E4%BB%B6/jetbrains/rider-ide%E4%BF%9D%E6%8C%81%E4%B8%AD%E6%96%87%E4%BD%86%E5%BF%AB%E9%80%9F%E6%96%87%E6%A1%A3%E5%8D%95%E7%8B%AC%E8%8B%B1%E8%AF%AD/</link><pubDate>Tue, 18 Nov 2025 15:13:31 +0800</pubDate><author>actforzjz@gmail.com (Jason)</author><guid>https://actforjason.github.io/posts/%E5%88%9B%E4%BD%9C%E8%BD%AF%E4%BB%B6/jetbrains/rider-ide%E4%BF%9D%E6%8C%81%E4%B8%AD%E6%96%87%E4%BD%86%E5%BF%AB%E9%80%9F%E6%96%87%E6%A1%A3%E5%8D%95%E7%8B%AC%E8%8B%B1%E8%AF%AD/</guid><category domain="https://actforjason.github.io/categories/jetbrains/">Jetbrains</category><description>&lt;p&gt;Rider的中文快速文档不方便网络查找问题，但又不想更改IDE语言？&lt;/p&gt;
 &lt;p&gt;Rider\plugins\localization-zh: lib\localization-zh.Jar IDE 菜单、设置界面语言文档；&lt;/p&gt;
 &lt;p&gt;Dotnet\Extensions\com.Intellij.Zh\i18n\ &amp;hellip; .NET相关提示、快速文档、Code Vision、检查/代码样式&lt;/p&gt;
 &lt;blockquote&gt;
